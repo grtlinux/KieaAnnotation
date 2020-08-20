@@ -2,7 +2,7 @@ package org.tain.object;
 
 import org.tain.annotation.StreamAnnotation;
 
-public class Sender {
+public class Sender extends AbstractToString {
 
 	@StreamAnnotation(length = 10)
 	private String name;

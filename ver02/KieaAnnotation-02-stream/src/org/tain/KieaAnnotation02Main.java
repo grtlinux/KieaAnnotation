@@ -4,6 +4,7 @@ import org.tain.container.StreamContainer;
 import org.tain.object.Info;
 import org.tain.object.Sender;
 import org.tain.object.Source;
+import org.tain.object.ToString;
 
 public class KieaAnnotation02Main {
 
@@ -13,6 +14,7 @@ public class KieaAnnotation02Main {
 		
 		if (flag) job01();
 		if (flag) job02();
+		if (flag) job03();
 	}
 	
 	private static void job01() throws Exception {
@@ -27,7 +29,11 @@ public class KieaAnnotation02Main {
 	}
 	
 	private static void job02() throws Exception {
-		System.out.println(">>> [" + new Info() + "]");
-		System.out.println(">>> [" + new Source() + "]");
+		System.out.println("Info >>> [" + new Info() + "]");
+		System.out.println("Source >>> [" + new Source() + "]");
+	}
+	
+	private static void job03() throws Exception {
+		System.out.println("ToString >>> [" + new ToString() + "]");
 	}
 }
