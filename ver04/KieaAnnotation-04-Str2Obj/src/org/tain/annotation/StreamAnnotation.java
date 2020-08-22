@@ -8,6 +8,6 @@ import java.lang.annotation.Target;
 @Target(value = {ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface StreamAnnotation {
-	String value() default "name";
+	String value() default "no_name";
 	int length() default 0;
 }
