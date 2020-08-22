@@ -18,7 +18,8 @@ public class InvokeWorking {
 		
 		if (flag) {
 			try {
-				Class<?> myClass = SampleObject.class;
+				Class<?> myClass = new SampleObject("ha ha ha").getClass();
+				//Class<?> myClass = SampleObject.class;
 				
 				Class<?>[] myParam = new Class<?>[] { String.class, int.class, Integer.class };
 				Method myMethod = myClass.getMethod("method001", myParam);
