@@ -1,8 +1,8 @@
-package org.tain.object;
+package org.tain.object2;
 
 import org.tain.annotation.StreamAnnotation;
 
-public class Info extends AbstractToString {
+public class _Info extends AbstractSetterGetter {
 
 	@StreamAnnotation(length = 10)
 	private String code1 = "ABCDE";

@@ -1,13 +1,14 @@
-package org.tain.object;
+package org.tain.object2;
 
 import org.tain.annotation.StreamAnnotation;
 
-public class Source extends AbstractToString {
+public class _Source extends AbstractSetterGetter {
 
 	@StreamAnnotation(length = 10)
 	private String name = "Hello";
 	
-	private Info info = new Info();
+	@StreamAnnotation
+	private _Info info = new _Info();
 	
 	@StreamAnnotation(length = 5)
 	private String title = "Hello title12345";
@@ -22,11 +23,11 @@ public class Source extends AbstractToString {
 		this.name = name;
 	}
 
-	public Info getInfo() {
+	public _Info getInfo() {
 		return info;
 	}
 
-	public void setInfo(Info info) {
+	public void setInfo(_Info info) {
 		this.info = info;
 	}
 

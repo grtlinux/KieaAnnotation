@@ -5,25 +5,23 @@ import org.tain.annotation.PrintAnnotation.Quality;
 
 public class PrintObject {
 
-	/*
 	@PrintAnnotation
 	private String name1;
 	
 	@PrintAnnotation
-	private String name2;
+	private String name2 = "Hello name2";
 	
 	@PrintAnnotation
 	private String name3;
 	
 	@PrintAnnotation
-	private long id;
+	private long id = 12345L;
 	
 	@PrintAnnotation
 	private String name4;
 	
 	@PrintAnnotation
 	private String name5;
-	*/
 	
 	@PrintAnnotation("*")
 	public void method2() {
