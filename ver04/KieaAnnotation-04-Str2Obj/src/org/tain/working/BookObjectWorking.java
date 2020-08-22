@@ -8,12 +8,14 @@ public class BookObjectWorking {
 	private static boolean flag = true;
 	
 	public static void test001() {
+		String stream = null;
+		// [BOOK_This Have a goo      2048Page_this'TIP01     Tip's cont    32020-08-22      1024Kiea      Kang         27]
+		
 		if (flag) {
 			try {
 				BookObject book = new BookObject();
-				String stream = book.getStream();
+				stream = book.getStream();
 				System.out.println("STREAM >>>>> [" + stream + "]");
-				// [BOOK_This Have a goo      2048Page_this'TIP01     Tip's cont    32020-08-22      1024Kiea      Kang         27]
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -21,7 +23,6 @@ public class BookObjectWorking {
 		
 		if (flag) {
 			try {
-				String stream = "BOOK_This Have a goo      2048Page_this'TIP01     Tip's cont    32020-08-22      1024Kiea      Kang         27";
 				SubString subString = new SubString(stream);
 				BookObject book = new BookObject();
 				book.setStream(subString);
